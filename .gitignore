@@ -1,0 +1,4 @@
+.cache
+.Rhistory
+*.pdf
+.DS_Store
