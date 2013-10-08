@@ -257,7 +257,7 @@ A description of different houses on the market includes the following three var
 1. The monthly gas bill.
 2. The number of bathrooms in the house.
 3. The square footage of the house.
-4. All of the above.
+4. _All of the above._
 
 *** .explanation
 

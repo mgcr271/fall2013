@@ -256,7 +256,7 @@ A description of different houses on the market includes the following three var
 1. The monthly gas bill.
 2. The number of bathrooms in the house.
 3. The square footage of the house.
-4. All of the above.
+4. _All of the above._
 
 *** .explanation
 
@@ -326,7 +326,7 @@ A beer dispensing machine at McGill Breweries has been set up so that it dispens
 
 Let $X$ represent the amount of beer dispensed. For 1% of 12-ounce cups to overflow, the z-score corresponding to $x = 12$ should equal 2.3263. Using $z = \frac{x - \mu}{\sigma}$, we can now solve for the mean, which gives us $\mu = 12 - 2.3263 \times 1$. Hence, the answer is 9.6737.
 
-![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
 --- &radio
@@ -348,7 +348,7 @@ A soft-drink machine can be regulated so that it discharges an average of m oz. 
 Let $X$ represent the amount of soft drink dispensed. For 2% of 6-ounce cups to overflow, the z-score corresponding to $x = 6$ should equal 2.0537. Using $z = \frac{x - \mu}{\sigma}$, we can now solve for the mean, which gives us $\mu = 6 - 2.0537 \times 0.4$. Hence, the answer is 5.1785.
 
 
-![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 
 ---
@@ -453,7 +453,7 @@ A new brand of hybrid car claims to get an average of 51 miles per gallon of reg
 Let $X$ denote the mileage of the new brand. We wish to calculate $P(X > x)$, where $x = 60$. We can compute the z-score as $z = \frac{x - \mu}{\sigma}$, which gives us $z = 1.5517$. From the standard normal table, we can find the area to the left of $z = 1.5517$ to be 0.9396. Since, we are interested in the area to the right, the answer is 0.0604.
 
 
-![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
 
 
 --- &radio
@@ -476,7 +476,7 @@ A new brand of hybrid car claims to get an average of 51 miles per gallon of reg
 The z-score corresponding to the bottom 5% of drivers can be determined from the standard normal table as $z = -1.6449$. Unstandardizing $z$, we can compute the corresponding mileage to be $x = \mu + z \times \sigma$, which gives 41.4598.
 
 
-![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8.png) 
 
 
 --- &radio
@@ -501,7 +501,14 @@ See next slide for the solution.
 
 Outliers influence the correlation coefficient, as they pull the line of best fit towards them. However, it is possible for outliers to both reduce, or amplify the correlation coefficient, based on the context. For example, consider the two scatterplots below. The line of best fit with the outlier is shown in blue and without the outlier is shown in red. 
 
-<img src="assets/fig/unnamed-chunk-91.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="45%" /><img src="assets/fig/unnamed-chunk-92.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="45%" />
+
+```
+## Error: could not find function "qplot"
+```
+
+```
+## Error: could not find function "qplot"
+```
 
 
 Note that in the case on the left, having the outlier reduces the strength of the relationship, while in the case on the right, the outlier seems to create an implied linear relationship, when there is actually none.
@@ -552,7 +559,7 @@ Jot down what is given, figure out what is missing, find the connection!
 
 We want to compute $P(Y > 21.5)$. We know that $Y$ is normally distributed with mean 14.8. If We knew the standard deviation, the probability is straight-forward to calculate. Now, we know that $b_1 = r \times s_y/s_x$. We are given $b_1 = 1$, $r = 0.48$ and $s_x = 2.2$. Plugging these values in, we get $s_y = b_1 \times s_x/r$, which equals 4.5833. We can now compute $P(Y > 21.5)$ using the mean and standard deviation.
 
-![plot of chunk unnamed-chunk-10](assets/fig/unnamed-chunk-10.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
 
 
 --- &radio
@@ -574,7 +581,7 @@ The weights of packets of cookies produced by a certain manufacturer have a norm
 
 The z-score corresponding to the bottom 0.01% of weights can be determined from the standard normal table as $z = -2.3263$ .  Unstandardizing $z$ , we can compute the corresponding weight to be $x = \mu + z \times \sigma$ , which gives 195.021.
 
-![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
 
 
 --- &radio
@@ -596,7 +603,7 @@ Tickets to minor league baseball games cost on average 7.02.  Including food, dr
 
 The z-score corresponding to the amount payed by the top 0.025% of families can be determined from the standard normal table as $z = 1.96$ .  Unstandardizing $z$ , we can compute the corresponding cost to be $x = \mu + z \times \sigma$ , which gives 68.617.
 
-![plot of chunk unnamed-chunk-14](assets/fig/unnamed-chunk-14.png) 
+![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14.png) 
 
 
 --- &radio
@@ -638,7 +645,7 @@ Which of the following statements are TRUE?
 
 As the name suggests, the Old Faithful geyser in Yellowstone National Park has eruptions that come at fairly predictable intervals, making it particularly attractive to tourists. Shown below is a boxplot of the time between successive eruptions
 
-<img src="assets/fig/faithful.png" title="plot of chunk faithful" alt="plot of chunk faithful" style="display: block; margin: auto;" />
+<img src="figure/faithful.png" title="plot of chunk faithful" alt="plot of chunk faithful" style="display: block; margin: auto;" />
 
 
 --- &radio
