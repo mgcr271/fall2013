@@ -2,3 +2,5 @@
 .Rhistory
 *.pdf
 .DS_Store
+quiz2
+*.rds

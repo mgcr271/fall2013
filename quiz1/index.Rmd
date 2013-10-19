@@ -526,6 +526,7 @@ Outliers influence the correlation coefficient, as they pull the line of best fi
 ```{r fig.width = 4, fig.height = 3, fig.show = 'hold', out.width = "45%"}
 set.seed(1234)
 require(plyr)
+require(ggplot2)
 x <- sort(runif(10, 1, 10))
 y <- 2*x + rnorm(10)
 y[10] <- 4

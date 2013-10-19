@@ -501,14 +501,7 @@ See next slide for the solution.
 
 Outliers influence the correlation coefficient, as they pull the line of best fit towards them. However, it is possible for outliers to both reduce, or amplify the correlation coefficient, based on the context. For example, consider the two scatterplots below. The line of best fit with the outlier is shown in blue and without the outlier is shown in red. 
 
-
-```
-## Error: could not find function "qplot"
-```
-
-```
-## Error: could not find function "qplot"
-```
+<img src="figure/unnamed-chunk-91.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="45%" /><img src="figure/unnamed-chunk-92.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="45%" />
 
 
 Note that in the case on the left, having the outlier reduces the strength of the relationship, while in the case on the right, the outlier seems to create an implied linear relationship, when there is actually none.
