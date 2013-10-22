@@ -1,0 +1,13 @@
+img.center {
+  display:block;
+  margin: auto auto;
+}
+slide.smaller li, slide.smaller p{
+  font-size: 16px;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  background: lightgoldenrodyellow
+}
