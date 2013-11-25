@@ -573,6 +573,10 @@ A random sample of 144 observations had a mean of 115 and a standard deviation o
 
 
 
+The critical test statistic is given by $z^{*} = \pm 1.96$. The standard error is given by se = 30/sqrt(144) = 2.5. Hence the null hypothesis will be rejected if the sample mean lies more than 1.96 x 2.5 = 4.9.
+
+Now, the alternate mean is shifted by (118 - 120)/2.5 = -0.8 standard errors. Hence, the z-scores corresponding to the rejection region, based on the alternate mean is given by $-0.8 \pm 1.96$, which gives us 1.16, -2.76. The power of the test is given by P(Z < -2.76) + P(Z >1.16), which gives us 0.1259.
+
 ![plot of chunk unnamed-chunk-21](figure/unnamed-chunk-21.png) 
 
 
@@ -751,7 +755,6 @@ We can compute the pooled proportion as (195 + 275)/(300 + 400), which gives us 
 Computing the difference between the two populations, we can calculate the mean and standard deviation of the differences as -0.2017 and 0.4753. 
 
 Hence a 95% CI is given by -0.2017 +- 2.5706 x 0.4753/sqrt(6), which gives us (-0.7004,0.2971).
-
 
 
 --- &radio

@@ -637,15 +637,20 @@ A random sample of 144 observations had a mean of 115 and a standard deviation o
 ```{r}
 n  = 144; xbar = 115; s = 30; mu0 = 120; mua = 118;
 se = s/sqrt(n)
-z = 1.645
+z = 1.96
 delta = (mua - mu0)/se
-z2a = z - delta
-z2b = z + delta
+z2a = delta + z
+z2b = delta - z
+pwr = pnorm(z2a, lower.tail = F) + pnorm(z2b)
 ```
+
+The critical test statistic is given by $z^{*} = \pm 1.96$. The standard error is given by se = 30/sqrt(144) = `r se`. Hence the null hypothesis will be rejected if the sample mean lies more than 1.96 x `r se` = `r se*1.96`.
+
+Now, the alternate mean is shifted by (118 - 120)/`r se` = `r delta` standard errors. Hence, the z-scores corresponding to the rejection region, based on the alternate mean is given by $`r delta` \pm 1.96$, which gives us `r z2a`, `r z2b`. The power of the test is given by P(Z < `r z2b`) + P(Z >`r z2a`), which gives us `r pwr`.
 
 ```{r}
 library(visualizationTools)
-po=power.t.test(n = 144, delta = -2, sd = 30, sig.level = 0.05,
+po=power.t.test(n = 144*16, delta = -2, sd = 30*4, sig.level = 0.05,
   type = "one.sample", alternative="two.sided", strict = T)
 plot(po)
 ```
