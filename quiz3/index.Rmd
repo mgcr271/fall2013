@@ -739,19 +739,32 @@ We can compute the pooled variance estimate as ((10 - 1)*5^2 + (8 - 1)*6^2)/(10 
 
 ## Question 34
 
-"A random sample of 150 investment bankers (population 1) had thirty percent who expressed dissatisfaction with their choice of career.  A random sample of 200 financial analysts (population 2) had forty-two percent who expressed dissatisfaction.  In testing the hypothesis that a higher proportion of financial analysts than investment bankers are dissatisfied, the standard deviation of the difference in the two population proportions is approximated by ______________ and the standardized test statistic is ______________." 
+A random sample of 150 investment bankers (population 1) had thirty percent who expressed dissatisfaction with their choice of career.  A random sample of 200 financial analysts (population 2) had forty-two percent who expressed dissatisfaction.  In testing the hypothesis that a higher proportion of financial analysts than investment bankers are dissatisfied, the standard deviation of the difference in the two population proportions is approximated by ______________ and the standardized test statistic is ______________.
 
 
-1. .0027;  -2.303
-2. .0027;  -44.44
-3. _.0521;  -2.303_
-4. .0521;  -44.44
+1. 0.0027;  -2.303
+2. 0.0027;  -44.44
+3. _0.0521;  -2.303_
+4. 0.0521;  -44.44
+
+*** .explanation
+
+```{r}
+n1 = 150; p1 = 0.30
+n2 = 200; p2 = 0.42
+ph = round((n1*p1 + n2*p2)/(n1 + n2), 3)
+se = sqrt(ph*(1-ph)*(1/n1 + 1/n2))
+z = (p1 - p2)/se
+```
+
+We can compute the pooled proportion as (150 x 0.30 + 200 x 0.42)/(150 + 200), which gives us ph = `r ph`. The standard deviation of the difference in proportions is now given by sqrt(0.368 * (1 - 0.368) * (1/150 + 1/200)), giving us `r se`. The z-statistic can be calculated as (0.30 - 0.42)/`r se`, which gives us `r z`.
+
 
 --- &radio
 
 ## Question 35
 
-"Consider an upper-tail test of hypothesis for the difference in two population means.  The sample data from the first population is: n = 50,  x-bar = 110, s = 10.  The sample data from the second population is: n = 75,  x-bar = unknown, s = 11.  We conclude the alternative hypothesis with a 2% level of significance.  Then the value of the second sample mean must be:"
+Consider an upper-tail test of hypothesis for the difference in two population means.  The sample data from the first population is: n = 50,  x-bar = 110, s = 10.  The sample data from the second population is: n = 75,  x-bar = unknown, s = 11.  We conclude the alternative hypothesis with a 2% level of significance.  Then the value of the second sample mean must be:
 
 
 1. at most 114.4
@@ -759,17 +772,48 @@ We can compute the pooled variance estimate as ((10 - 1)*5^2 + (8 - 1)*6^2)/(10 
 3. less than 114.4
 4. at least 106.1
 
+*** .explanation
+
+```{r}
+n1 = 50; xbar1 = 110; s1 = 10;
+n2 = 75;              s2 = 11;
+deg_f = min(n1, n2) - 1
+tstar = qt(0.02, deg_f)
+se = sqrt(s1^2/n1 + s2^2/n2)
+```
+
+Since we reject the NULL at 2% significance level, the standardized test statistic must be less than `r tstar` (calculated using t-distribution with df = `r deg_f` and alpha = 0.02).
+
+We know that t = (xbar2 - xbar1)/se, where the se is given by $\sqrt(10^{2}/50 + 11^{2}/75)$ = `r se`. Since t must be less than `r tstar`, we get that xbar2 - xbar1 must be less than `r se` x `r tstar`, which corresponds to answer (B).
+
+
+
 --- &radio
 
 ## Question 36
 
-"A test of hypothesis is performed to determine whether the proportion of Montrealers (population 1) who want the decriminalization of marijuana is greater than the proportion of Torontonians (population 2) who want decriminalization of marijuana.  A random sample of 120 Montrealers had 90 who favor while a random sample 150 Torontonians also had 90 who favor.  The level of significance of the test is 1%.  Then the classical action limit for the appropriate test of hypothesis is:"
+A test of hypothesis is performed to determine whether the proportion of Montrealers (population 1) who want the decriminalization of marijuana is greater than the proportion of Torontonians (population 2) who want decriminalization of marijuana.  A random sample of 120 Montrealers had 90 who favor while a random sample 150 Torontonians also had 90 who favor.  The level of significance of the test is 1%.  Then the classical action limit for the appropriate test of hypothesis is:
 
 
 1. -0.1343
 2. 0.1487
 3. -0.1487
 4. _0.1343_
+
+*** .explanation
+
+```{r}
+n1 = 120; p1 = 90/120
+n2 = 150; p2 = 90/150
+ph = (n1*p1 + n2*p2)/(n1 + n2)
+se = sqrt(ph*(1-ph)*(1/n1 + 1/n2))
+zstar = qnorm(0.01)
+```
+
+We can compute the pooled proportion as (90 + 90)/(120 + 150), which gives us p = `r ph`. The standard error is given by sqrt(0.667 * (1 - 0.667)*(1/150 + 1/200)), which gives us `r se`.
+
+The critical test statistic corresponding to 1% is given by `r zstar`. Hence, the classical action limit is given by `r zstar` x `r se`, which gives us `r zstar*se`
+
 
 --- &radio
 

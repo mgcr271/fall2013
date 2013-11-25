@@ -650,25 +650,44 @@ We can compute the pooled variance estimate as ((10 - 1)*5^2 + (8 - 1)*6^2)/(10 
 
 ## Question 34
 
-"A random sample of 150 investment bankers (population 1) had thirty percent who expressed dissatisfaction with their choice of career.  A random sample of 200 financial analysts (population 2) had forty-two percent who expressed dissatisfaction.  In testing the hypothesis that a higher proportion of financial analysts than investment bankers are dissatisfied, the standard deviation of the difference in the two population proportions is approximated by ______________ and the standardized test statistic is ______________." 
+A random sample of 150 investment bankers (population 1) had thirty percent who expressed dissatisfaction with their choice of career.  A random sample of 200 financial analysts (population 2) had forty-two percent who expressed dissatisfaction.  In testing the hypothesis that a higher proportion of financial analysts than investment bankers are dissatisfied, the standard deviation of the difference in the two population proportions is approximated by ______________ and the standardized test statistic is ______________.
 
 
-1. .0027;  -2.303
-2. .0027;  -44.44
-3. _.0521;  -2.303_
-4. .0521;  -44.44
+1. 0.0027;  -2.303
+2. 0.0027;  -44.44
+3. _0.0521;  -2.303_
+4. 0.0521;  -44.44
+
+*** .explanation
+
+
+
+
+We can compute the pooled proportion as (150 x 0.30 + 200 x 0.42)/(150 + 200), which gives us ph = 0.369. The standard deviation of the difference in proportions is now given by sqrt(0.368 * (1 - 0.368) * (1/150 + 1/200)), giving us 0.0521. The z-statistic can be calculated as (0.30 - 0.42)/0.0521, which gives us -2.3024.
+
 
 --- &radio
 
 ## Question 35
 
-"Consider an upper-tail test of hypothesis for the difference in two population means.  The sample data from the first population is: n = 50,  x-bar = 110, s = 10.  The sample data from the second population is: n = 75,  x-bar = unknown, s = 11.  We conclude the alternative hypothesis with a 2% level of significance.  Then the value of the second sample mean must be:"
+Consider an upper-tail test of hypothesis for the difference in two population means.  The sample data from the first population is: n = 50,  x-bar = 110, s = 10.  The sample data from the second population is: n = 75,  x-bar = unknown, s = 11.  We conclude the alternative hypothesis with a 2% level of significance.  Then the value of the second sample mean must be:
 
 
 1. at most 114.4
 2. _less than 106.1_
 3. less than 114.4
 4. at least 106.1
+
+*** .explanation
+
+
+
+
+Since we reject the NULL at 2% significance level, the standardized test statistic must be less than -2.1099 (calculated using t-distribution with df = 49 and alpha = 0.02).
+
+We know that t = (xbar2 - xbar1)/se, where the se is given by $\sqrt(10^{2}/50 + 11^{2}/75)$ = 1.9009. Since t must be less than -2.1099, we get that xbar2 - xbar1 must be less than 1.9009 x -2.1099, which corresponds to answer (B).
+
+
 
 --- &radio
 
@@ -681,6 +700,16 @@ We can compute the pooled variance estimate as ((10 - 1)*5^2 + (8 - 1)*6^2)/(10 
 2. 0.1487
 3. -0.1487
 4. _0.1343_
+
+*** .explanation
+
+
+
+
+We can compute the pooled proportion as (90 + 90)/(120 + 150), which gives us p = 0.6667. The standard error is given by sqrt(0.667 * (1 - 0.667)*(1/150 + 1/200)), which gives us 0.0577.
+
+The critical test statistic corresponding to 1% is given by -2.3263. Hence, the classical action limit is given by -2.3263 x 0.0577, which gives us -0.1343
+
 
 --- &radio
 
