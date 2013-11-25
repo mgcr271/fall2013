@@ -400,15 +400,15 @@ where $\bar{x}$ and $s$ are the sample mean and standard deviation. Plugging in 
 
 ```{r}
 n = 50; mu0 = 20; xbar = 18; s = 7
-z = (xbar - mu0)/(s/sqrt(n))
-pval = pnorm(z)
+t = (xbar - mu0)/(s/sqrt(n))
+pval = pt(t, df = n - 1)*2
 ```
 
 We can compute the test statistic for this hypothesis test as 
 
 $$z=\frac{18-20}{7/\sqrt{50}}$$,
 
-which gives us a p-value of p = `r pval`. As the null hypothesis is not rejected, the significance level is smaller than `r pval`. The only value satisfying this condition is (C) 2%.
+which gives us a p-value of p = `r pval`. As the null hypothesis is not rejected, the significance level is smaller than `r pval`. The only value of alpha satisfying this condition is (C) 2%.
 
 --- &radio
 

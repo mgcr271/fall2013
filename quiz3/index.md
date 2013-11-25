@@ -359,7 +359,7 @@ We can compute the test statistic for this hypothesis test as
 
 $$z=\frac{18-20}{7/\sqrt{50}}$$,
 
-which gives us a p-value of p = 0.0217. As the null hypothesis is not rejected, the significance level is smaller than 0.0217. The only value satisfying this condition is (C) 2%.
+which gives us a p-value of p = 0.0488. As the null hypothesis is not rejected, the significance level is smaller than 0.0488. The only value of alpha satisfying this condition is (C) 2%.
 
 --- &radio
 
