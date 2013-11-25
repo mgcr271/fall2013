@@ -3,6 +3,7 @@ title: Quiz 3 Solutions
 subtitle: MGCR 271
 author: Ramnath Vaidyanathan
 widgets: [mathjax, quiz, bootstrap]
+mode: selfcontained
 url: {lib: ../quiz1/libraries}
 --- &radio
 
