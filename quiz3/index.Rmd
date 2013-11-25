@@ -819,13 +819,25 @@ The critical test statistic corresponding to 1% is given by `r zstar`. Hence, th
 
 ## Question 37
 
-"A company produces pesticides.  A new product DieBug (Population 1) is to be compared with the product currently in use, Blastem (Population 2).  Two rooms of equal size are sprayed with the same amount of spray, room #1 with DieBug and room #2 with Blastem.  Three hundred insects are released into room #1 and four hundred in room #2.  After 30 minutes the number of dead insects are is counted.  195 dead insects were found in room #1 and 275 dead insects were found in room #2.  What is the standard deviation of p-bar1 minus p-bar2?"
+A company produces pesticides.  A new product DieBug (Population 1) is to be compared with the product currently in use, Blastem (Population 2).  Two rooms of equal size are sprayed with the same amount of spray, room #1 with DieBug and room #2 with Blastem.  Three hundred insects are released into room #1 and four hundred in room #2.  After 30 minutes the number of dead insects are is counted.  195 dead insects were found in room #1 and 275 dead insects were found in room #2.  What is the standard deviation of p-bar1 minus p-bar2?
 
 
 1. 0.4697
 2. 0.2206
 3. 0.0013
 4. _0.0359_
+
+*** .explanation
+
+```{r}
+n1 = 300; n2 = 400
+x1 = 195; x2 = 275
+ph = (x1 + x2)/(n1 + n2)
+se = sqrt(ph*(1-ph)*(1/n1 + 1/n2))
+```
+
+We can compute the pooled proportion as (195 + 275)/(300 + 400), which gives us p = `r ph`. The standard error is given by sqrt(`r ph` * (1 - `r ph`)*(1/`r n1` + 1/`r n2`)), which gives us `r se`.
+
 
 --- &radio
 
@@ -838,6 +850,27 @@ The critical test statistic corresponding to 1% is given by `r zstar`. Hence, th
 2. _-0.7005 to 0.2972_
 3. -0.6765 to 0.2731
 4. -0.5787 to 0.1753
+
+*** .explanation
+
+```{r}
+x1 = 4.77 - 4.34
+x2 = 5.16 - 5.89
+x3 = 2.73 - 2.52
+x4 = 4.39 - 3.91
+x5 = 5.25 - 4.99
+x6 = 3.80 - 3.24
+xbar = -mean(c(x1, x2, x3, x4, x5, x6))
+s =  sd(c(x1, x2, x3, x4, x5, x6))
+tstar = qt(0.025, 5, lower.tail = F)
+CI = round(xbar + c(-1, 1)*tstar*s/sqrt(6), 4)
+CI_ans = paste0('(', CI[1], ',', CI[2], ')')
+```
+
+Computing the difference between the two populations, we can calculate the mean and standard deviation of the differences as `r xbar` and `r s`. 
+
+Hence a 95% CI is given by `r xbar` +- `r tstar` x `r s`/sqrt(6), which gives us `r CI_ans`.
+
 
 --- &radio
 

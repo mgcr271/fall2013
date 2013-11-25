@@ -693,7 +693,7 @@ We know that t = (xbar2 - xbar1)/se, where the se is given by $\sqrt(10^{2}/50 +
 
 ## Question 36
 
-"A test of hypothesis is performed to determine whether the proportion of Montrealers (population 1) who want the decriminalization of marijuana is greater than the proportion of Torontonians (population 2) who want decriminalization of marijuana.  A random sample of 120 Montrealers had 90 who favor while a random sample 150 Torontonians also had 90 who favor.  The level of significance of the test is 1%.  Then the classical action limit for the appropriate test of hypothesis is:"
+A test of hypothesis is performed to determine whether the proportion of Montrealers (population 1) who want the decriminalization of marijuana is greater than the proportion of Torontonians (population 2) who want decriminalization of marijuana.  A random sample of 120 Montrealers had 90 who favor while a random sample 150 Torontonians also had 90 who favor.  The level of significance of the test is 1%.  Then the classical action limit for the appropriate test of hypothesis is:
 
 
 1. -0.1343
@@ -715,13 +715,21 @@ The critical test statistic corresponding to 1% is given by -2.3263. Hence, the 
 
 ## Question 37
 
-"A company produces pesticides.  A new product DieBug (Population 1) is to be compared with the product currently in use, Blastem (Population 2).  Two rooms of equal size are sprayed with the same amount of spray, room #1 with DieBug and room #2 with Blastem.  Three hundred insects are released into room #1 and four hundred in room #2.  After 30 minutes the number of dead insects are is counted.  195 dead insects were found in room #1 and 275 dead insects were found in room #2.  What is the standard deviation of p-bar1 minus p-bar2?"
+A company produces pesticides.  A new product DieBug (Population 1) is to be compared with the product currently in use, Blastem (Population 2).  Two rooms of equal size are sprayed with the same amount of spray, room #1 with DieBug and room #2 with Blastem.  Three hundred insects are released into room #1 and four hundred in room #2.  After 30 minutes the number of dead insects are is counted.  195 dead insects were found in room #1 and 275 dead insects were found in room #2.  What is the standard deviation of p-bar1 minus p-bar2?
 
 
 1. 0.4697
 2. 0.2206
 3. 0.0013
 4. _0.0359_
+
+*** .explanation
+
+
+
+
+We can compute the pooled proportion as (195 + 275)/(300 + 400), which gives us p = 0.6714. The standard error is given by sqrt(0.6714 * (1 - 0.6714)*(1/300 + 1/400)), which gives us 0.0359.
+
 
 --- &radio
 
@@ -734,6 +742,17 @@ The critical test statistic corresponding to 1% is given by -2.3263. Hence, the 
 2. _-0.7005 to 0.2972_
 3. -0.6765 to 0.2731
 4. -0.5787 to 0.1753
+
+*** .explanation
+
+
+
+
+Computing the difference between the two populations, we can calculate the mean and standard deviation of the differences as -0.2017 and 0.4753. 
+
+Hence a 95% CI is given by -0.2017 +- 2.5706 x 0.4753/sqrt(6), which gives us (-0.7004,0.2971).
+
+
 
 --- &radio
 
