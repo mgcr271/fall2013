@@ -764,8 +764,8 @@ Hence a 95% CI is given by -0.2017 +- 2.5706 x 0.4753/sqrt(6), which gives us (-
 A company with two plants producing the same product, but with two slightly different manufacturing processes, conducted a sample study at each of the two plants with the following results: The sample statistics from the first group are: n = 40, x-bar = 18, s = 4.2. The sample statistics from the second group are: n = 50, x-bar = 20, s = 4.  In testing the hypothesis that the mean time to produce the product is the same at both plants, what is the p-value of the test?
 
 
-1. .0110
-2. .0516
+1. 0.0110
+2. 0.0516
 3. _.0220_
-4. .1032
+4. 0.1032
 
