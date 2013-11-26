@@ -472,10 +472,10 @@ The beta-risk is Type II error, which is the probability of NOT  rejecting H0, w
 Select ALL statements that are true?
 
 
-1. _A 95% confidence interval estimate of a population mean is 36.71 to 54.29.  Then the correct conclusion for a two-tailed test with a hypothesized , mean of 60 based on this confidence interval, at the 5% level of significance, must be to conclude Ho._
-2. A test of hypothesis is found to have a p-value of .073.  Then one should conclude H1 if the level of significance is 10% and conclude Ho if the level of significance is 5%.
-3. In a lower-tail test, if the p-value is less than alpha, then the test statistic would be less than the action limit.
-4. _A statistical test of hypothesis is performed under the assumption that the alternative hypothesis is true._
+1. A 95% confidence interval estimate of a population mean is 36.71 to 54.29.  Then the correct conclusion for a two-tailed test with a hypothesized , mean of 60 based on this confidence interval, at the 5% level of significance, must be to conclude Ho.
+2. _A test of hypothesis is found to have a p-value of .073.  Then one should conclude H1 if the level of significance is 10% and conclude Ho if the level of significance is 5%._
+3. _In a lower-tail test, if the p-value is less than alpha, then the test statistic would be less than the action limit._
+4. A statistical test of hypothesis is performed under the assumption that the alternative hypothesis is true.
 
 --- &radio
 
