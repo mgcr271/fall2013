@@ -812,7 +812,7 @@ n1 = 120; p1 = 90/120
 n2 = 150; p2 = 90/150
 ph = (n1*p1 + n2*p2)/(n1 + n2)
 se = sqrt(ph*(1-ph)*(1/n1 + 1/n2))
-zstar = qnorm(0.01)
+zstar = qnorm(0.01, lower.tail = F)
 ```
 
 We can compute the pooled proportion as (90 + 90)/(120 + 150), which gives us p = `r ph`. The standard error is given by sqrt(0.667 * (1 - 0.667)*(1/150 + 1/200)), which gives us `r se`.

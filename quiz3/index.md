@@ -712,7 +712,7 @@ A test of hypothesis is performed to determine whether the proportion of Montrea
 
 We can compute the pooled proportion as (90 + 90)/(120 + 150), which gives us p = 0.6667. The standard error is given by sqrt(0.667 * (1 - 0.667)*(1/150 + 1/200)), which gives us 0.0577.
 
-The critical test statistic corresponding to 1% is given by -2.3263. Hence, the classical action limit is given by -2.3263 x 0.0577, which gives us -0.1343
+The critical test statistic corresponding to 1% is given by 2.3263. Hence, the classical action limit is given by 2.3263 x 0.0577, which gives us 0.1343
 
 
 --- &radio
