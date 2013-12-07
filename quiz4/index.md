@@ -1,5 +1,5 @@
 ---
-title: Quiz 3 Solutions
+title: Quiz 4 Solutions
 subtitle: MGCR 271
 author: Ramnath Vaidyanathan
 widgets: [mathjax, quiz, bootstrap]
