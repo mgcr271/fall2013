@@ -316,7 +316,7 @@ In a multiple regression model, the following statistics are given: SSE = 100, R
 
 
 
-The adjusted Rsquare is given by 1 - (SSE/dfE)/(SST/dfT). We also know that $R^2 = 1 - SSE/SST$. So SSE/SST = 1 - $R^2$ = 0.005. We also have dfE = `15 - (5 + 1)` and dfT = `15 - 1`. Plugging everything in, we get $1 - 0.005 \times 9/14$, which gives us 0.9968.
+The adjusted Rsquare is given by 1 - (SSE/dfE)/(SST/dfT). We also know that $R^2 = 1 - SSE/SST$. So SSE/SST = 1 - $R^2$ = 0.005. We also have dfE = `15 - (5 + 1)` and dfT = `15 - 1`. Plugging everything in, we get $1 - 0.005 \times 14/9$, which gives us 0.9922.
 
 NOTE. Since the correct answer was not in the list of options, one point was awarded to everyone.
 

@@ -325,11 +325,11 @@ In a multiple regression model, the following statistics are given: SSE = 100, R
 ssesst = 1 - 0.995
 dfE = 15 - (5 + 1)
 dfT = 15 - 1
-adjrsq = 1 - ssesst*dfE/dfT
+adjrsq = 1 - ssesst*dfT/dfE
 ```
 
 
-The adjusted Rsquare is given by 1 - (SSE/dfE)/(SST/dfT). We also know that $R^2 = 1 - SSE/SST$. So SSE/SST = 1 - $R^2$ = `r 1 - 0.995`. We also have dfE = `15 - (5 + 1)` and dfT = `15 - 1`. Plugging everything in, we get $1 - `r ssesst` \times `r dfE`/`r dfT`$, which gives us `r adjrsq`.
+The adjusted Rsquare is given by 1 - (SSE/dfE)/(SST/dfT). We also know that $R^2 = 1 - SSE/SST$. So SSE/SST = 1 - $R^2$ = `r 1 - 0.995`. We also have dfE = `15 - (5 + 1)` and dfT = `15 - 1`. Plugging everything in, we get $1 - `r ssesst` \times `r dfT`/`r dfE`$, which gives us `r adjrsq`.
 
 NOTE. Since the correct answer was not in the list of options, one point was awarded to everyone.
 
