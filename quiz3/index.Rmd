@@ -445,6 +445,10 @@ mu0 = 120; n = 150; xbar = 17000/n; s = 30; mu1 = 122
 ts = qt(0.025, 149, lower.tail = F)
 t2a = ts + (mu1 - mu0)/(s/sqrt(n))
 t2b = -ts + (mu1 - mu0)/(s/sqrt(n))
+xbar_a = mu0 - s/sqrt(n)*ts
+xbar_b = mu0 + s/sqrt(n)*ts
+t2_a = (xbar_a - mu1)/(s/sqrt(n))
+t2_b = (xbar_b - mu1)/(s/sqrt(n))
 ```
 
 ```{r}
